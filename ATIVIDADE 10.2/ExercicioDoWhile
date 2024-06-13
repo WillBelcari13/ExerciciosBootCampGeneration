@@ -1,0 +1,40 @@
+package LaçosForEWhile;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num,somaMult3=0,contMult3=0;
+		float mediaMult3;
+		
+		Scanner Leia = new Scanner(System.in);
+		
+		do {
+			
+			System.out.println("\nEntre com um numero inteiro:");
+			num = Leia.nextInt();
+			if(num == 0) {
+				System.out.println("\nVocê digitou ZERO, vamos finalizar:");
+				
+			}else {
+				if(num % 3 == 0) {
+					somaMult3 += num;
+					contMult3++;
+				}
+			}
+			
+		}while(num != 0);
+		
+		if(contMult3 == 0) {
+			System.out.println("\nNão foi possivel achar a media...");
+			
+		}else {
+		mediaMult3 = somaMult3 / contMult3;
+		System.out.println("\nA media foi de:" +mediaMult3);
+		
+	}
+	}
+}

@@ -79,8 +79,7 @@ public class ExercicioSwitch5 {
 			System.out.printf("O valor total é de R$: %.2f",valorTotal);
 			break;
 
-	       	}
-
+		}
 		}
 
 }
